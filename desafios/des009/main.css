@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(39, 37, 37);
+    color: white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.div-principal {
+    display: grid;
+    justify-content: center;
+}
+

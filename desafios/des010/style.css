@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(./fontes/idroid.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7ecf7e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    width: 100%;
+    padding: 10px 15px;
+    background-image: linear-gradient(to bottom, #6FC765, #1F331F);
+    color: #fff;
+}
+
+header > h1 {
+    text-align: center;
+    padding: 30px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+header > p {
+    margin: 0px auto;
+    padding: 0px 0px 20px 0px;
+    width: 500px;
+    text-align: center;
+
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: #9fee9f;
+    padding: 0px 5px;    
+}
+
+header > nav > a:hover {
+    background-color: #3f7e39;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 10px 0px;
+    background-color: #fff;
+}
+
+main > section > h1, h2 {
+    font-family: idroid;
+    color: #31632d;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+main > section > h2 {
+    background-image: linear-gradient(to right,#cfffcf, #fff );
+}
+
+section {
+    margin: 15px 0px;
+}
+
+section > p {
+    padding: 15px;
+}
+
+section > p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #31632d;
+}
+
+.quatro > p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #31632d;
+}
+
+span {
+    color: #31632d;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #31632d;
+}
+
+.quatro {
+    margin: 0px 10px 10px 10px;
+    padding: 15px;
+    background-color: #c1f7c1;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#quatro > h3 {
+    margin: 1px 10px 0px 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #3f7e39;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.quatro > p {
+    padding: 15px;
+}
+
+footer {
+    background-color: #1F331F;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
