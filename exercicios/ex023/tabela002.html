@@ -27,11 +27,41 @@
                 margin: 50px auto;
                 background-color: #fff;
                 box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.432);
+                position: relative;
+            }
+
+            caption {
+                font-size: 1.8em;
+                font-weight: bold;
+                padding: 10px;
+                background-image: linear-gradient(to right, #313B35,#3A5E49, #64a780);
+                color: #fff;
+                border-top-right-radius: 5px;
+                border-top-left-radius: 5px;
+                border: 1px solid black;
+                border-bottom: none;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.596);
             }
 
             thead, tfoot {
                 background-color: rgb(99, 99, 99);
                 color: #fff;
+            }
+
+            thead > tr > th {
+                position: sticky;
+                top: -1px;
+                background-color: rgba(99, 99, 99, 0.966);
+                color: #fff;
+                border: 1px solid black;
+            }
+
+            tbody > tr:nth-child(odd) { /* 2n-1 */
+                background-color: lightgray;
+            }
+
+            tbody > tr:nth-child(even) { /* 2n */
+                background-color: #fff;
             }
 
             tfoot {
@@ -54,6 +84,7 @@
         <!-- Anatomia para tabelas grandes 
         
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -62,15 +93,16 @@
                     TR, TD, TH
         -->
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
                 <tr>
-                    <th class="center">Posição</th>
-                    <th>Unidade federativa</th>
-                    <th>População <small>(Censo de 2022)</small></th>
-                    <th>População <small>(Censo de 2010)</small></th>
-                    <th>Mudança</th>
-                    <th>% da pop. total</th>
-                    <th>País comparável (habitantes)</th>
+                    <th scope="col" class="center">Posição</th>
+                    <th scope="col">Unidade federativa</th>
+                    <th scope="col">População <small>(Censo de 2022)</small></th>
+                    <th scope="col">População <small>(Censo de 2010)</small></th>
+                    <th scope="col">Mudança</th>
+                    <th scope="col">% da pop. total</th>
+                    <th scope="col">País comparável (habitantes)</th>
                 </tr>
             </thead>
             <tbody>
@@ -320,7 +352,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="2">Total de Habitantes</th>
+                    <th colspan="2" scope="row">Total de Habitantes</th>
                     <td colspan="5" class="num"><strong>203 062 512</strong></td>
                 </tr>
             </tfoot>
