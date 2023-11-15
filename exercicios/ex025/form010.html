@@ -15,18 +15,13 @@
     <h1>Exemplo de Formulário</h1>
     <form action="#" method="get" autocomplete="on">
         <div>
-            <label for="inum1">Número 01: </label>
-            <input type="number" name="num1" id="inum1" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
-        </div>
-        <div>
-            <label for="inum2">Número 02: </label>
-            <input type="number" name="num2" id="inum2" min="0" max="50" required oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" oninput="calcIdade()">
         </div>
         <br>
         <div>
-            <label for="isoma">Soma: </label>
-            <output name="soma" id="isoma">0</output>
-            <!-- Output é só pra mostrar coisas na tela, não é enviado para o backend-->
+            <label for="iidade">Sua idade é</label>
+            <output id="iidade">_</output>
         </div>
         <br>
         <div>
@@ -34,5 +29,11 @@
             <input type="reset" value="Limpar">
         </div>
     </form>
+    <script>
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
 </body>
 </html>
