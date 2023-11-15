@@ -14,12 +14,14 @@ html, body {
     height: 100vh;
     background-color: darkolivegreen;
     color: aliceblue;
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.500);
     padding: 10px;
+    text-align: center;
 }
 
 
